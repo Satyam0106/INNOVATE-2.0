@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top left, #3B82F6, #2DD4BF); /* Linear gradient background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 100px auto; /* Center the container */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text inside the container */
+}
+
+.instagram-ids {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.instagram-ids li {
+    margin: 10px 0; /* Space between each ID */
+}
+
+.instagram-ids a {
+    text-decoration: none; /* Remove underline from links */
+    color: #0077cc; /* Instagram-like color */
+    font-weight: bold;
+}
+
+.instagram-ids a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

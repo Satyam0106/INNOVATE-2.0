@@ -1,0 +1,58 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #FF9933, #FFFFFF, #138808); /* Indian flag colors */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to top left, #3B82F6, #2DD4BF);
+    border-radius: 8px; /* Optional: adds rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    color: white; /* Change text color to white for better contrast */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.about-section {
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    font-size: 1.8em;
+}
+
+.about-section p, .about-section ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}

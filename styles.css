@@ -1,0 +1,165 @@
+/* styles.css */
+/* styles.css */
+
+/* Navbar Styles */
+.navbar {
+    background-color: #3B82F6; /* Navbar background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for the navbar */
+    position: fixed; /* Fix the navbar to the top */
+    top: 0; /* Position it at the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar-logo {
+    font-size: 24px; /* Logo font size */
+    text-decoration: none; /* Remove underline from link */
+    color: white; /* Logo text color */
+}
+
+.navbar-menu {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Use flexbox for horizontal layout */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar-menu li {
+    margin-left: 20px; /* Space between menu items */
+}
+
+.navbar-menu a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link text color */
+    font-size: 16px; /* Link font size */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar-menu a:hover {
+    color: #2DD4BF; /* Change color on hover */
+}
+
+/* Adjust body margin to avoid content being hidden behind the navbar */
+body {
+    margin-top: 60px; /* Adjust this value based on navbar height */
+}
+
+body {
+    margin: 40px;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    background: linear-gradient(to top left, #3B82F6, #2DD4BF);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Transparent white */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Maximum width for larger screens */
+    margin-top: 60px; /* Adjust margin to avoid overlap with the smaller navbar */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.category {
+    margin: 10px;
+    flex: 1 1 30%; /* Flex-grow, flex-shrink, flex-basis */
+}
+
+.category-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-button:hover {
+    background-color: #2DD4BF;
+}
+
+.issue-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#feedbackForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Make the form take the full width of the container */
+}
+
+#feedbackForm label {
+    margin: 10px 0 5px;
+}
+
+#feedbackForm input, 
+#feedbackForm select, 
+#feedbackForm textarea {
+    padding: 15px; /* Increased padding for larger input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Make inputs take the full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#feedbackForm textarea {
+    height: 150px; /* Set a fixed height for the textarea */
+}
+
+#feedbackForm button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#feedbackForm button:hover {
+    background-color: #2DD4BF;
+}
+
+h2 {
+    margin-top: 20px; /* Add some space above the headings */
+}
+.container li:hover{
+    background-color: #2DD4BF;
+    transition: all 0s linear 0s;
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link text color */
+    font-size: 16px; /* Link font size */
+    transition: color 0.3s
+}

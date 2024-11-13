@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="adminDashboard.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <ul>
+            <li><a href="#" id="dashboard">Dashboard</a></li>
+            <li><a href="#" id="manage-complaints">Manage Complaints</a></li>
+            <li><a href="#" id="analytics">Analytics</a></li>
+            <li><a href="#" id="profile">Profile</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <header>
+            <h1>Welcome, Admin</h1>
+        </header>
+        
+        <!-- Dashboard Section -->
+        <section id="dashboard-section" class="section active">
+            <h2>Dashboard Overview</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Complaints</h3>
+                    <p id="total-complaints">0</p>
+                </div>
+                <div class="card">
+                    <h3>Resolved Complaints</h3>
+                    <p id="resolved-complaints">0</p>
+                </div>
+                <div class="card">
+                    <h3>Pending Complaints</h3>
+                    <p id="pending-complaints">0</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="adminDashboard.js"></script>
+</body>
+</html>

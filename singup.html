@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+<!-- Now we will made outerbox and inner box using amet -->
+<!-- The amet is .outer-box>.inner-box -->
+<div class="outer-box">
+    <div class="inner-box">
+<!--In the inner class we have created a header section with a class called signup header  -->
+        <header class="signup-header">
+            <h1> Sign Up</h1>
+        </header>
+<!--Here we use main. Inside main we will use form and use label and input tag to make req boxes for information  -->
+        <mai class="signup-body">
+        <form action="#"></form>
+            <p>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" required>
+            </p>
+            <p>
+            <label for="email">Email</label>
+            <input type="text" id="email" required>
+            </p>
+            <p>
+            <label for="yourPassword">Password</label>
+            <input type="password" id="yourPassword" placeholder="At least 8 charcaters" required>
+            </p>
+            <p>
+            <label for="Number">Mobile Number</label>
+            <input type="number" id="Number" placeholder="At least 10 digits" required>
+            </p>
+            <p>
+            <a href="index.html"><input type="submit" id="Sumbit" value="Create Account"></a>
+            </p>
+        </form>
+        </main>
+<!-- Now we will set a footer which  will have the signup box -->
+ <footer class="signup-footer">
+    <p>
+        <!-- Here in anchor tag blank is used to open the site in a new tab with same href link. -->
+    Already have an account?<a transfer="_blank" href="login.html">Login</a>
+    </p>
+ </footer>
+    </div>
+</div>
+<script src="signup.js">
+</script>
+</body>
+</html>

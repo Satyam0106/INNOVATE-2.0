@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Feedback Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">UR Government</a>
+            <ul class="navbar-menu">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faqs.html">FAQ's</a></li>
+                <li><a href="login.html">Log Out</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Government Complain Portal</h1>
+        <h2>Select a Category</h2>
+        <div class="category-container">
+            <div class="category">
+                <button class="category-button">Electricity</button>
+                <ul class="issue-list hidden">
+                    <li>Power Outage</li>
+                    <li>Voltage Fluctuation</li>
+                    <li>Faulty Meter</li>
+                    <li>Street Light Issues</li>
+                    <li>Connection Problems</li>
+                </ul>
+            </div>
+            <div class="category">
+                <button class="category-button">Water</button>
+                <ul class="issue-list hidden">
+                    <li>Water Leakage</li>
+                    <li>Low Water Pressure</li>
+                    <li>Contaminated Water</li>
+                    <li>Pipe Burst</li>
+                    <li>Water Supply Interruption</li>
+                </ul>
+            </div>
+            <div class="category">
+                <button class="category-button">Garbage</button>
+                <ul class="issue-list hidden">
+                    <li>Missed Garbage Collection</li>
+                    <li>Overflowing Bins</li>
+                    <li>Illegal Dumping</li>
+                    <li>Littering</li>
+                    <li>Recycling Issues</li>
+                </ul>
+            </div>
+            <div class="category">
+                <button class="category-button">Roads</button>
+                <ul class="issue-list hidden">
+                    <li>Potholes</li>
+                    <li>Road Damage</li>
+                    <li>Traffic Signal Issues</li>
+                    <li>Street Sign Problems</li>
+                    <li>Poor Lighting</li>
+                </ul>
+            </div>
+            <div class="category">
+                <button class="category-button">Buildings</button>
+                <ul class="issue-list hidden">
+                    <li>Structural Issues</li>
+                    <li>Maintenance Problems</li>
+                    <li>Safety Concerns</li>
+                    <li>Accessibility Issues</li>
+                    <li>Fire Safety Concerns</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="issueListContainer" class="hidden">
+            <h2>Select an Issue</h2>
+            <ul id="issueList"></ul>
+        </div>
+
+        <div id="feedbackFormContainer" class="hidden">
+            <h2>Feedback Form for <span id="selectedCategory"></span></h2>
+            <form id="feedbackForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" required>
+
+                <label for="satisfaction">Satisfaction:</label>
+                <select id="satisfaction">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="message">Complaint:</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit">Submit Complaint</button>
+            </form>
+        </div>
+        <ul id="feedbackList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
