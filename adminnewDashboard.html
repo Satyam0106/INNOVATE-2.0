@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="adminnewDashboard.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <ul>
+            <li><a href="adminDashboard.html" id="dashboard">Dashboard</a></li>
+            <li><a href="#" id="manage-complaints">Manage Complaints</a></li>
+            <li><a href="#" id="profile">Profile</a></li>
+            <li><a href="index.html" id="logout">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>Complaints Overview</h1>
+        </header>
+
+        <section id="complaints-section">
+            <h2>Complaints by Category</h2>
+            <div class="category-section" id="electricity-section">
+                <h3>Electricity</h3>
+                <ul id="electricity-complaints" class="complaint-list"></ul>
+            </div>
+            <div class="category-section" id="water-section">
+                <h3>Water</h3>
+                <ul id="water-complaints" class="complaint-list"></ul>
+            </div>
+            <div class="category-section" id="garbage-section">
+                <h3>Garbage</h3>
+                <ul id="garbage-complaints" class="complaint-list"></ul>
+            </div>
+            <div class="category-section" id="roads-section">
+                <h3>Roads</h3>
+                <ul id="roads-complaints" class="complaint-list"></ul>
+            </div>
+            <div class="category-section" id="buildings-section">
+                <h3>Buildings</h3>
+                <ul id="buildings-complaints" class="complaint-list"></ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="adminDashboard.js"></script>
+</body>
+</html>
